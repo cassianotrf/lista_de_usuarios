@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-
   def index
     #User.delete_all
     #new_list_user
      if params[:keywords].present?
       @users = User.search params[:keywords], fields: [:first_name, :gender,
         :title, :last_name, :email, :nat, :seed]
+      @users = User.page(params['page']).per(10)
     end
   end
 
