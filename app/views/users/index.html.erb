@@ -1,0 +1,27 @@
+<div class="pagetitle">
+  <form role="form" action="/users">
+   <h1>Users List</h1>
+</div>
+   <input type="text" class="form-control" placeholder="Ex: Male" name="keywords">
+   <button class="btn" type="submit">Procurar</button>
+  </form>
+<div class="container">
+  <% if @users.present? %>
+    <% @users.each do |user| %>
+      <div class="col-xs-6">
+        <div class="list-users">
+          <div class="avatar">
+            <img src= <%=user.picture %> style = "border-radius:100px">
+          </div>
+          <p> Title: <%= user.title.capitalize %></p>
+          <p> First Name: <%= user.first_name.capitalize %></p>
+          <p> Last Name: <%= user.last_name.capitalize %></p>
+          <p> Gender: <%= user.gender.capitalize %></p>
+          <p> Email: <%= user.email %></p>
+          <p> Nat: <%= user.nat.upcase %></p>
+          <p> Seed: <%= user.seed %></p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

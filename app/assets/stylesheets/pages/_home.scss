@@ -1,14 +1,30 @@
 // Specific CSS for your home-page
+
+body{
+  background-color: #618685
+}
 .pagetitle{
-  text-align: center
+  text-align: center;
+  color: #fefbd8
 }
 .list-users{
-  color: #070707;
-  background-color: #fff;
+  color: #484f4f;
+  background-color: #fefbd8;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding-left: 10px;
+  width: 80;
+  font-family: 'Roboto', sans-serif
 }
 .avatar{
-    float:right;
+
+  float:right
 
 }
+.paginate{
+  text-align: center;
+  color: #fefbd8;
+  font-size: 20px;
+
+}
+
+
