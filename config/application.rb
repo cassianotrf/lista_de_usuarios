@@ -12,6 +12,8 @@ module ListaDeUsuarios
       generate.assets false
       generate.helper false
     end
+    Elasticsearch::Model.client = Elasticsearch::Client.new host: ENV['SEARCHBOX_URL']
+
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
