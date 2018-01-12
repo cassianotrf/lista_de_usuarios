@@ -19,6 +19,9 @@ gem 'httparty'
 gem "kaminari"
 gem 'searchkick'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'bonsai-elasticsearch-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
