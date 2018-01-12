@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     #if params[:keywords].present?
     #  @users = User.search(params[:keywords], fields: [:first_name, :gender,
     #    :title, :last_name, :email, :nat, :seed], page: params[:page], per_page: 100)
-    end
+
   end
 
   def new_list_user
