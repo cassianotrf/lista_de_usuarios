@@ -1,11 +1,16 @@
 class UsersController < ApplicationController
 
   def index
+    #To populate the database unmark the coments from the next two lines,
+    #run the application, and comment the lines again before run again
     #User.delete_all
-    new_list_user
-    #if params[:keywords].present?
-    #  @users = User.search(params[:keywords], fields: [:first_name, :gender,
-    #    :title, :last_name, :email, :nat, :seed], page: params[:page], per_page: 100)
+    #new_list_user
+    if params[:keywords].present?
+    @users = User.search(params[:keywords], fields: [:first_name, :gender,
+        :title, :last_name, :email, :nat, :seed], page: params[:page], per_page: 100)
+    else
+    @users = User.all
+    end
 
   end
 
