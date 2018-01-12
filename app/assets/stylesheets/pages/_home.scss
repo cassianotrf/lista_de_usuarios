@@ -3,9 +3,16 @@
 body{
   background-color: #618685
 }
+
 .pagetitle{
   text-align: center;
   color: #fefbd8
+}
+
+.form-control{
+  margin: auto;
+  width: 80%;
+  margin-bottom: 10px;
 }
 .list-users{
   color: #484f4f;
@@ -27,4 +34,40 @@ body{
 
 }
 
+.btn {
+  background: #618685;
+  background-image: -webkit-linear-gradient(top, #618685, #272829);
+  background-image: -moz-linear-gradient(top, #618685, #272829);
+  background-image: -ms-linear-gradient(top, #618685, #272829);
+  background-image: -o-linear-gradient(top, #618685, #272829);
+  background-image: linear-gradient(to bottom, #618685, #272829);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #fefbd8;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #7b7c7d 2px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
 
+.btn:hover {
+  background: #618685;
+  color: #fefbd8;
+  background-image: -webkit-linear-gradient(top, #618685, #000000);
+  background-image: -moz-linear-gradient(top, #618685, #000000);
+  background-image: -ms-linear-gradient(top, #618685, #000000);
+  background-image: -o-linear-gradient(top, #618685, #000000);
+  background-image: linear-gradient(to bottom, #618685, #000000);
+  text-decoration: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}

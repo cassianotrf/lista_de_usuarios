@@ -18,6 +18,7 @@ gem 'webpacker'
 gem 'httparty'
 gem "kaminari"
 gem 'searchkick'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
